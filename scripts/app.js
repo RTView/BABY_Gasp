@@ -12,7 +12,7 @@ const createScene = async () => {
     const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(1, 1, 0), scene);
 
     // 🔄 Cambia qui il nome del file
-    const result = await BABYLON.SceneLoader.ImportMeshAsync("", "assets/", "Curvy01_Edit.compressed.splat", scene);
+    const result = await BABYLON.SceneLoader.ImportMeshAsync("", "assets/", "Curvy_01_Edit.splat", scene);
     const mesh = result.meshes[0];
 
     if (mesh instanceof BABYLON.GaussianSplattingMesh) {
